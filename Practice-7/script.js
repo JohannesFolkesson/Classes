@@ -24,7 +24,6 @@ class Dog {
 
 }
 
-
 const Hund1 = new Dog("Beagle", 20, 10)
 const Hund2 = new Dog("Pomeranian", 9, 2)
 
