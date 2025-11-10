@@ -11,7 +11,6 @@ class Fisk {
         console.log(`${this.name} eats ${amount}kg food, and its new weight is ${this.weight.toFixed(1)}`)
 
     }
-
     swim(distance) {
         const lostWeight = distance * 0.01
         this.weight -=  lostWeight;
