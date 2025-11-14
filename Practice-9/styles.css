@@ -1,0 +1,5 @@
+.product-img {
+    width: 200px;   /* ändra till vilken storlek du vill */
+    height: auto;   /* behåller proportionerna */
+    border-radius: 8px; /* valfritt */
+}
