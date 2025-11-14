@@ -31,6 +31,5 @@ class ProductCard {
     }
 }
 
-
 const Product1 = new ProductCard( "Women Shirt", "https://static.zara.net/assets/public/fbb1/b2b2/b725497a9c6e/ec9c3bc95489/05536639719-e1/05536639719-e1.jpg?ts=1759477905086&w=1440", "Medium", 22)
 const Product2 = new ProductCard("Mens T-shirt", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQojQExZDXEEUp73wItCiNQ3gLgpXCCrCY-YA&s", "Large", 18)
