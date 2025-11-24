@@ -2,6 +2,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+
 }
 
+.player-card img {
+    width: 100%;           /* Fyller kortets bredd */
+    max-width: 200px;      /* Max storlek */
+    height: auto;          /* Behåller proportioner */
+    border-radius: 8px;    /* Rundade hörn */
+    object-fit: cover;     /* Beskär snyggt */
+}

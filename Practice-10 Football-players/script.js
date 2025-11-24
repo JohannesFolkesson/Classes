@@ -4,11 +4,11 @@ import { PlayerStore } from "./playerstore.js"
 
 const store = new PlayerStore()
 
-const player1 = new Player("Erling Haaland", 23, "Forward", "Manchester City", 180)
-const player2 = new Player("Kylian Mbappé", 25, "Forward", "Paris Saint-Germain", 200)
+const player1 = new Player("Erling Haaland", 23, "Forward", "Manchester City", 180, "images/haaland.jpg")
+const player2 = new Player("Kylian Mbappé", 25, "Forward", "Real Madrid", 200, "images/mbappe.jpg")
 const player3 = new Player("Luka Modrić", 37, "Midfielder", "Real Madrid", 20)
 const player4 = new Player("Virgil van Dijk", 31, "Defender", "Liverpool", 70)
-const player5 = new Player("David Raya", 30, "Goalkeeper", "Arsenal", 200)
+const player5 = new Player("David Raya", 30, "Goalkeeper", "Arsenal", 90)
 
 store.addPlayer(player1)
 store.addPlayer(player2)
@@ -29,6 +29,7 @@ function renderPlayers(listOfPlayers) {
         card.classList.add('player-card')
 
         card.innerHTML = `
+        ${player.image ? `<img src="${player.image}" alt="${player.name}">` : ''}
         <h3> ${player.name}</h3>
         <p> Age: ${player.age}</p>
         <p> Position: ${player.position}</p>
