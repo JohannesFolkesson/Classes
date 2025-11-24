@@ -19,7 +19,6 @@ store.addPlayer(player5)
 console.log(store.getAllPlayers())
 
 
-
 const container = document.querySelector('#players-container')
 
 function renderPlayers(listOfPlayers) {
