@@ -40,5 +40,3 @@ function renderPlayers(listOfPlayers) {
 }
 
 renderPlayers(store.getAllPlayers())
-
-
