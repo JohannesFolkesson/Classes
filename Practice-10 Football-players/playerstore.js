@@ -8,10 +8,6 @@ addPlayer(player){
     this.players.push(player);
 }
 
-getPlayerById() {
-    return this.players.find(p => p.id === id)
-}
-
 getAllPlayers() {
     return [...this.players];
 }
@@ -24,7 +20,7 @@ filterByPosition(position) {
     return this.players.filter(p => p.position === position)
 }
 
-filterByClub() {
+filterByClub(club) {
     return this.players.filter(p => p.club === club)
 }
 
