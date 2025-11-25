@@ -11,7 +11,7 @@ const player4 = new Player("Virgil van Dijk", 31, "Defender", "Liverpool", 70, "
 const player5 = new Player("David Raya", 30, "Goalkeeper", "Arsenal", 90, "images/raya.jpg")
 const player6 = new Player("Cole Palmer", 23, "Midfielder", "Chelsea", 200, "images/palmer.jpg")
 const player7 = new Player("De Bruyne", 34, "Midfielder", "Manchester City", 150, "images/bruyne.jpg")
-const player8
+const player8 = new Player ("Pedro Porro", 29, "Defender", "Tottenham", 80, "images/porro.jpg")
 
 store.addPlayer(player1)
 store.addPlayer(player2)
