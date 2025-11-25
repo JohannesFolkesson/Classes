@@ -15,6 +15,7 @@ const player8 = new Player ("Pedro Porro", 29, "Defender", "Tottenham", 80, "ima
 const player9 = new Player("Eden Hazard", 40, "Midfielder", "Chelsea", 300, "images/hazard.jpg")
 const player10 = new Player("Mo Salah", 33, "Forward", "Liverpool", 190, "images/salah.jpg")
 const player11 = new Player("Jeremy Frimpong", 30, "Defender", "Liverpool", 110, "images/frimpong")
+const player12 = new Player()
 
 store.addPlayer(player1)
 store.addPlayer(player2)
