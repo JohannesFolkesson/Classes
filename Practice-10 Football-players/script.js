@@ -14,8 +14,8 @@ const player7 = new Player("De Bruyne", 34, "Midfielder", "Manchester City", 150
 const player8 = new Player ("Pedro Porro", 29, "Defender", "Tottenham", 80, "images/porro.jpg")
 const player9 = new Player("Eden Hazard", 40, "Midfielder", "Chelsea", 300, "images/hazard.jpg")
 const player10 = new Player("Mo Salah", 33, "Forward", "Liverpool", 190, "images/salah.jpg")
-const player11 = new Player("Jeremy Frimpong", 30, "Defender", "Liverpool", 110, "images/frimpong")
-const player12 = new Player("Moises Caicedo", 29, "Midfielder", "Chelsea", 200, "images/caicedo")
+const player11 = new Player("Jeremy Frimpong", 30, "Defender", "Liverpool", 110, "images/frimpong.jpg")
+const player12 = new Player("Moises Caicedo", 29, "Midfielder", "Chelsea", 200, "images/caicedo.jpg")
 
 store.addPlayer(player1)
 store.addPlayer(player2)
@@ -24,6 +24,11 @@ store.addPlayer(player4)
 store.addPlayer(player5)
 store.addPlayer(player6)
 store.addPlayer(player7)
+store.addPlayer(player8)
+store.addPlayer(player9)
+store.addPlayer(player10)
+store.addPlayer(player11)
+store.addPlayer(player12)
 
 console.log(store.getAllPlayers())
 
@@ -46,6 +51,11 @@ document.getElementById('defenders').addEventListener('click', () => {
 document.getElementById('goalkeepers').addEventListener('click', () => {
     renderPlayers(store.filterByPosition('Goalkeeper'))
 })
+
+document.getElementById('club').addEventListener('click', () => {
+    renderPlayers(store.filterByClub('Chelsea'))
+})
+
 
 
 const container = document.querySelector('#players-container')
