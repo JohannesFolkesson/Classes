@@ -7,7 +7,7 @@ export class Player { //enstaka spelare mall
         this.club = club;
         this.price = price;
         this.image = image;
-        this. isSold = isSold;
+        this.isSold = isSold;
         
 
     }
