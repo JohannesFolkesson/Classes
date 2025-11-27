@@ -47,4 +47,3 @@ class Usercard {
 const user1 = new Usercard("Johannes", 32, "img johannes placeholder", "Johannes1993_@hotmail.com")
 
 console.log(user1)
-
