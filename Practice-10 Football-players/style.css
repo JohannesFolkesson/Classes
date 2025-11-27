@@ -7,7 +7,7 @@
 }
 
 .player-card img {
-    width: 100%;           /* Fyller kortets bredd */
+    width: 100%;
     max-width: 200px;      /* Max storlek */
     height: auto;
     border-radius: 8px;  
