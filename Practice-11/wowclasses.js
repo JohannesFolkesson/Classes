@@ -1,16 +1,16 @@
 import { Character } from "./character.js"
 
 
-export class Mage {
-    constructor(Mage, Frostbolt) {
-        this.Mage = Mage;
-        this.Frostbolt = Frostbolt;
+export class Mage extends Character {
+    constructor(name) {
+       super(name, "Mage")
+       this.specialAbility = "Frostbolt"
 
     }
 
     useSpell() {
 
-        return `${this.name} casts ${this.Frostbolt}.`
+        return `${this.name} - ${this.classType} casts ${this.specialAbility}!`
 
     }
 }
