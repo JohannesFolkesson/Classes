@@ -17,7 +17,7 @@ const randomChar = characters[Math.floor(Math.random() * characters.length)]
 
 console.log(Jaina.useSpell() + " Hits " + randomChar.name + " for 10 damage")
 
-console.log(Rexxar.useSpell() + " Crits for 20 damage")
+console.log(Rexxar.useSpell() + " Crits " +randomChar.name + " for 20 damage")
 
 
 
