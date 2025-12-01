@@ -15,9 +15,11 @@ console.log(Thrall.basicInfo())
 
 const randomChar = characters[Math.floor(Math.random() * characters.length)]
 
-console.log(Jaina.useSpell() + " Hits " + randomChar.name + " for 10 damage")
+console.log(Jaina.useSpell() + " Hits " + randomChar.name + " for 10 damage!")
 
-console.log(Rexxar.useSpell() + " Crits " +randomChar.name + " for 20 damage")
+console.log(Rexxar.useSpell() + " Crits " + randomChar.name + " for 20 damage!")
+
+console.log(Thrall.useSpell() + " Bashes " + randomChar.name + " for 30 damage!")
 
 
 
