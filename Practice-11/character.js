@@ -11,15 +11,24 @@ export class Character {
         this.currentHP = maxHP;
         this.maxMana = 100;
         this.currentMana = maxMana;
-        this.attack = attack;
-        this.defense = defense;
+        this.attack = 10;
+        this.defense = 5;
 
 
     }
 
     basicInfo() {
-        return `Name: ${this.name} - Class: ${this.classType} - Spec: ${this.Specialization}`
+        return `Name: ${this.name} - Class: ${this.classType} - Spec: ${this.Specialization} - Level: ${this.level}`
     }
 
+    takeDamage(amount) {
+        const dmg = Math.max(1, amount - this.defense);
+        this.currentHP -= dmg;
+
+        if(this.currentHP <= 0) {
+            this.currentHP = 0;
+            console.log(`${this.name} has died`)
+        }
+    }
 
 }
