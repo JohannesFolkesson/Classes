@@ -11,6 +11,8 @@ export class Character {
         this.currentHP = maxHP;
         this.maxMana = 100;
         this.currentMana = maxMana;
+        this.attack = attack;
+        this.defense = defense;
 
 
     }
