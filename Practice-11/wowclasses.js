@@ -55,4 +55,3 @@ export class Shaman extends Character {
         return `${this.name} (${this.classType})(${this.Specialization}) hits with ${this.specialAbility}!`
     }
 }
-
