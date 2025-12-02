@@ -12,7 +12,6 @@ export class Mage extends Character {
 
         const damage = this.attack * 2;
         target.takeDamage(damage);
-        // return `${this.name} (${this.classType})(${this.Specialization}) casts ${this.specialAbility}!`
         return `${this.name} (${this.classType})(${this.Specialization}) `
          + `casts ${this.specialAbility} on ${target.name} for ${damage} damage! ${target.name} now has ${target.currentHP} health`
     }
@@ -25,8 +24,14 @@ export class Priest extends Character {
 
        
     }
-     useSpell() {
-            return `${this.name} (${this.classType})(${this.Specialization}) casts ${this.specialAbility}!`;
+     useSpell(target) {
+            const min = 1
+            const max = 10
+            const multiplier = Math.floor(Math.random() * (max - min) + min);
+            const damage = this.attack * multiplier;
+            target.takeDamage(damage);
+
+            return `${this.name}(${this.classType})(${this.Specialization})` + ` casts ${this.specialAbility} on ${target.name} for ${damage} damage! ${target.name} now has ${target.currentHP} health.`
         }
 }
 
