@@ -14,7 +14,7 @@ export class Mage extends Character {
         target.takeDamage(damage);
         // return `${this.name} (${this.classType})(${this.Specialization}) casts ${this.specialAbility}!`
         return `${this.name} (${this.classType})(${this.Specialization}) `
-         + `casts ${this.specialAbility} on ${target.name} for ${damage} damage!`
+         + `casts ${this.specialAbility} on ${target.name} for ${damage} damage! ${target.name} now has ${target.currentHP} health`
     }
 }
 
