@@ -14,7 +14,6 @@ export class Character {
         this.attack = 10;
         this.defense = 5;
 
-
     }
 
     basicInfo() {
