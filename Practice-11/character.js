@@ -7,8 +7,11 @@ export class Character {
 
         this.level = level;
         this.xp = xp;
-        this.maxHP = maxHP;
-        
+        this.maxHP = 100;
+        this.currentHP = maxHP;
+        this.maxMana = 100;
+        this.currentMana = maxMana;
+
 
     }
 
