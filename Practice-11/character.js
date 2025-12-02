@@ -5,6 +5,11 @@ export class Character {
         this.classType = classType;
         this.Specialization = Specialization;
 
+        this.level = level;
+        this.xp = xp;
+        this.maxHP = maxHP;
+        
+
     }
 
     basicInfo() {
