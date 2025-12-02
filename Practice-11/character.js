@@ -1,6 +1,6 @@
 export class Character {
 
-    constructor(name, classType, Specialization) {
+    constructor(name, classType, Specialization, level, xp) {
         this.name = name;
         this.classType = classType;
         this.Specialization = Specialization;
@@ -8,9 +8,9 @@ export class Character {
         this.level = level;
         this.xp = xp;
         this.maxHP = 100;
-        this.currentHP = maxHP;
+        this.currentHP = this.maxHP;
         this.maxMana = 100;
-        this.currentMana = maxMana;
+        this.currentMana = this.maxMana;
         this.attack = 10;
         this.defense = 5;
 

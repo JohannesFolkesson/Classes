@@ -8,10 +8,13 @@ export class Mage extends Character {
 
     }
 
-    useSpell() {
+    useSpell(target) {
 
-        return `${this.name} (${this.classType})(${this.Specialization}) casts ${this.specialAbility}!`
-
+        const damage = this.attack * 2;
+        target.takeDamage(damage);
+        // return `${this.name} (${this.classType})(${this.Specialization}) casts ${this.specialAbility}!`
+        return `${this.name} (${this.classType})(${this.Specialization}) `
+         + `casts ${this.specialAbility} on ${target.name} for ${damage} damage!`
     }
 }
 
