@@ -10,7 +10,7 @@ export class Mage extends Character {
 
     useSpell(target) {
 
-             const min = 2
+            const min = 2
             const max = 8
             const multiplier = Math.floor(Math.random() * (max - min) + min);
             const damage = this.attack * multiplier;
