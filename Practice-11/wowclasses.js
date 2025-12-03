@@ -19,6 +19,7 @@ export class Mage extends Character {
             return `${this.name}(${this.classType})(${this.Specialization})` + ` casts ${this.specialAbility} on ${target.name} for ${damage} damage! ${target.name} now has ${target.currentHP} health.`
     }
 }
+
 export class Priest extends Character {
     constructor(name) {
         super(name, "Priest", "Shadow");
