@@ -41,7 +41,7 @@ export class Hunter extends Character {
         super(name, "Hunter", "Marksmanship");
         this.specialAbility = "Chimera shot";
     }
-    useSpell() {
+    useSpell(target) {
             const min = 2
             const max = 6
             const multiplier = Math.floor(Math.random() * (max - min) + min);
