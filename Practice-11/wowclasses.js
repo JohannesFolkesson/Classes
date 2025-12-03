@@ -24,8 +24,6 @@ export class Priest extends Character {
     constructor(name) {
         super(name, "Priest", "Shadow");
         this.specialAbility = "Mind Blast";
-
-       
     }
      useSpell(target) {
             const min = 1
