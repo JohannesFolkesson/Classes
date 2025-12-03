@@ -41,7 +41,6 @@ export class Hunter extends Character {
         super(name, "Hunter", "Marksmanship");
         this.specialAbility = "Chimera shot";
     }
-
     useSpell() {
           const min = 2
             const max = 6
