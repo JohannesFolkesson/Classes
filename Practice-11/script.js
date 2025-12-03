@@ -19,6 +19,6 @@ console.log(Jaina.useSpell(randomChar))
 
 console.log(Rexxar.useSpell(randomChar))
 
-console.log(Thrall.useSpell() + " Bashes " + randomChar.name + " for 30 damage!")
+console.log(Thrall.useSpell(randomChar))
 
 console.log(Velen.useSpell(randomChar))
