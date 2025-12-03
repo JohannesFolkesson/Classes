@@ -57,7 +57,7 @@ export class Shaman extends Character {
         super(name, "Shaman", "Enhancement")
         this.specialAbility = "Stormstrike"
     }
-    useSpell() {
+    useSpell(target) {
             const min = 2
             const max = 5
             const multiplier = Math.floor(Math.random() * (max - min) + min);
