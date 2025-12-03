@@ -10,10 +10,13 @@ export class Mage extends Character {
 
     useSpell(target) {
 
-        const damage = this.attack * 2;
-        target.takeDamage(damage);
-        return `${this.name} (${this.classType})(${this.Specialization}) `
-         + `casts ${this.specialAbility} on ${target.name} for ${damage} damage! ${target.name} now has ${target.currentHP} health`
+             const min = 2
+            const max = 8
+            const multiplier = Math.floor(Math.random() * (max - min) + min);
+            const damage = this.attack * multiplier;
+            target.takeDamage(damage);
+
+            return `${this.name}(${this.classType})(${this.Specialization})` + ` casts ${this.specialAbility} on ${target.name} for ${damage} damage! ${target.name} now has ${target.currentHP} health.`
     }
 }
 
@@ -42,7 +45,13 @@ export class Hunter extends Character {
     }
 
     useSpell() {
-        return `${this.name} (${this.classType})(${this.Specialization}) fires away ${this.specialAbility}!`
+          const min = 2
+            const max = 6
+            const multiplier = Math.floor(Math.random() * (max - min) + min);
+            const damage = this.attack * multiplier;
+            target.takeDamage(damage);
+
+            return `${this.name}(${this.classType})(${this.Specialization})` + ` casts ${this.specialAbility} on ${target.name} for ${damage} damage! ${target.name} now has ${target.currentHP} health.`
     }
 }
 
@@ -52,6 +61,12 @@ export class Shaman extends Character {
         this.specialAbility = "Stormstrike"
     }
     useSpell() {
-        return `${this.name} (${this.classType})(${this.Specialization}) hits with ${this.specialAbility}!`
+            const min = 2
+            const max = 5
+            const multiplier = Math.floor(Math.random() * (max - min) + min);
+            const damage = this.attack * multiplier;
+            target.takeDamage(damage);
+
+            return `${this.name}(${this.classType})(${this.Specialization})` + ` casts ${this.specialAbility} on ${target.name} for ${damage} damage! ${target.name} now has ${target.currentHP} health.`
     }
 }
