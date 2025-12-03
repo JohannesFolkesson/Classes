@@ -42,7 +42,7 @@ export class Hunter extends Character {
         this.specialAbility = "Chimera shot";
     }
     useSpell() {
-          const min = 2
+            const min = 2
             const max = 6
             const multiplier = Math.floor(Math.random() * (max - min) + min);
             const damage = this.attack * multiplier;
