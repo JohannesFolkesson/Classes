@@ -20,6 +20,7 @@ export class Mage extends Character {
     }
 }
 
+
 export class Priest extends Character {
     constructor(name) {
         super(name, "Priest", "Shadow");
