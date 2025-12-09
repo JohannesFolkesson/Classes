@@ -13,7 +13,7 @@ export class Pets {
 
     runLength(amount) {
         this.amount += amount;
-        console.log(`${this.name} springer`)
+        console.log(`${this.name}(${this.breed}) springer ${amount} km innan hon blir trött.`)
 
 
     }
