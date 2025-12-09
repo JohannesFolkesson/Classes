@@ -13,7 +13,7 @@ export class Pets {
 
     runLength(amount) {
         this.amount += amount;
-        console.log(``)
+        console.log(`${this.name} springer`)
 
 
     }
