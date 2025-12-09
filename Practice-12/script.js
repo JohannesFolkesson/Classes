@@ -8,5 +8,5 @@ Pomeranian.basicInfo()
 
 
 Beagle.runLength(9)
-Pomeranian
+Pomeranian.runLength(1.8)
 
