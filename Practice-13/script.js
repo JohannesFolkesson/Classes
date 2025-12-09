@@ -8,4 +8,3 @@ const Nissan = new Cars("Nissan" , "Qashqai", 280222)
  Audi.basicInfo()
 
  Tesla.maxSpeed(380)
- 
