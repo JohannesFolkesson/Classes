@@ -10,5 +10,11 @@ export class Cars {
         console.log(`En ${this.brand} (${this.model}) kostar ${this.cost} kronor att köpa.`)
     }
 
-    maxSpeed()
+    maxSpeed(amount) {
+        this.amount += amount;
+
+        console.log(`${this.brand} (${this.model}) kan nå en top-speed på ${amount} km/h`)
+    }
+
+    
 }
