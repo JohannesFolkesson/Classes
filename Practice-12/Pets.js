@@ -12,7 +12,8 @@ export class Pets {
     }
 
     runLength(amount) {
-        this.amount = 0;
+        this.amount += amount;
+        console.log()
 
 
     }
