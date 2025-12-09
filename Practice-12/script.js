@@ -6,3 +6,7 @@ const Pomeranian = new Pets("Zoey", "Pomeranian", 3)
 Beagle.basicInfo()
 Pomeranian.basicInfo()
 
+
+Beagle.runLength(9)
+Pomeranian
+
